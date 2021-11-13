@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main class="flex-container">
+
+        <section id="fund-section" style="flex-grow: 2;">
+            <div class='main-card'>
+                <p class="main-card-text">
+                    $1,123.91
+                </p>
+            </div>
+            <div class='fiat-card'>
+                <img src="images/dollar-symbol.png" class="dollar-logo" alt="eth-logo">
+                <p class="cash-card-text">
+                    $5,000
+                </p>
+            </div>
+            <div class="ethereum-container">
+                <div class="ethereum-card">
+                    <img src="images/ethereum.png" class="eth-logo" alt="eth-logo">
+                    <p class="ethereum-card-text">
+                        202.15 ETH
+                    </p>
+                </div>
+                <div class="ethereum-card">
+                    <p class="ethereum-card-text">
+                        <img src="images/chainlink.png" class="link-logo" alt="eth-logo">
+                        103.56 LINK
+                    </p>
+                </div>
+                <div class="ethereum-card">
+                    <p class="ethereum-card-text">
+                        <img src="images/ethereum.png" class="eth-logo" alt="eth-logo">
+                        0.87658 ETH
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="transaction-section" style="flex-grow: 8;">
+            <div class="eth-price-card" id='price'>
+                <a href="#" id="eth-btn" class="eth-price-text">Latest Price</a>
+                
+            </div>
+            <input id="get-price" type="text" placeholder="ETH/USD">
+            <div class="transact">
+               <a href="#" class="btn">Send</a>
+               <a href="#" class="btn">Receive</a>
+            </div>
+            <table>
+                <tr>
+                    <th>Transaction History</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Sent</td>
+                    <td>11/4/2021</td>
+                    <td>10 Eth</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Received</td>
+                    <td>11/6/2021</td>
+                    <td>12 Eth</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Trade</td>
+                    <td>11/7/2021</td>
+                    <td>3.67 Eth</td>
+                    <td>Completed</td>
+                </tr>
+            </table>
+        </section>
+
+
+    </main>
+
+    <script src="./dist/bundle.js"></script>
+
+</body>
+
+
+</html>

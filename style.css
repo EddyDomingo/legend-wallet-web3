@@ -1,0 +1,222 @@
+/* Global Variables */
+
+:root {
+  --fontFamilyLexend: "Lexend Deca", sans-serif;
+  --fontFamilyBig: "Big Shoulders Display", cursive;
+  --fontWeight400: 400;
+  --fontWeight700: 700;
+
+  --Brightorange: hsl(31, 77%, 52%);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+  --Verylightgray: hsl(0, 0%, 95%); /*(background, headings, buttons) */
+}
+
+/* Global styles */
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontFamilyLexend);
+  font-size: 15px;
+  background-color: var(--Verylightgray);
+}
+
+/* Layout */
+
+.flex-container {
+  display: flex;
+  background-color: var(--Verylightgray);
+}
+.flex-container > section {
+  background-color: var(--Transparentwhite);
+  margin: 5px 8px 8px 8px;
+  padding: 20px;
+  font-size: 30px;
+  height: 95vh;
+}
+
+#fund-section {
+  max-width: 405px;
+}
+
+#transaction-section {
+  max-width: 810px;
+}
+
+/* .large-flex {
+  padding: 5px;
+  flex-grow: 8;
+} */
+
+/* Typography */
+
+.main-card-text {
+  color: var(--Transparentwhite);
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+.main-card-text::after {
+  content: "Total Portfolio Value";
+  font-size: 10px;
+  display: block;
+  text-align: center;
+}
+
+.cash-card-text {
+  color: var(--Transparentwhite);
+  font-size: 30px;
+  margin: 0 auto 0 auto;
+}
+
+.cash-card-text::after {
+  content: "Available Cash";
+  font-size: 10px;
+  display: block;
+  text-align: center;
+}
+
+.ethereum-card-text {
+  color: var(--Transparentwhite);
+  font-size: 20px;
+  margin: 0 auto 0 auto;
+}
+
+.ethereum-card-text::after {
+  content: "Available Coins";
+  font-size: 10px;
+  display: block;
+  text-align: center;
+}
+
+.transaction-history {
+  font-size: 20px;
+  transform: translateY(95px);
+}
+
+.eth-price-text {
+  margin: 0 auto 0 auto;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--Transparentwhite);
+}
+
+/* .eth-price-text::after {
+  content: "ETH/USD";
+  font-size: 8px;
+  display: block;
+} */
+
+/* Cards */
+.main-card {
+  width: 80%;
+  height: 150px;
+  max-width: 90%;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 1.5em;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fiat-card,
+.ethereum-card {
+  width: 80%;
+  height: 50px;
+  max-width: 90%;
+  border-radius: 5px;
+  margin: 30px auto;
+  padding: 1.5em;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ethereum-card {
+  margin: 10px auto;
+}
+
+.ethereum-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Verylightgray);
+}
+
+.transact {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--Transparentwhite);
+  width: 35%;
+  transform: translateX(500px) translateY(-40px);
+}
+
+.btn {
+  text-decoration: none;
+  padding: 7px 25px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  border-radius: 5px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: var(--Verylightgray);
+}
+
+.eth-price-card {
+  width: 20%;
+  height: 40px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  border-radius: 5px;
+  font-size: 20px;
+  transform: translateY(40px);
+  color: var(--Verylightgray);
+  text-align: center;
+}
+
+/* Input field */
+
+#get-price {
+  width: 20%;
+  height: 40px;
+  transform: translateX(160px) translateY(-5px);
+}
+
+/* Transaction Table */
+
+table {
+  /* border-collapse: collapse; */
+  width: 100%;
+  border: 1px solid black;
+  transform: translateY(40px);
+}
+
+th {
+  font-style: bold;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+/* images */
+
+.eth-logo,
+.link-logo,
+.dollar-logo {
+  width: 35px;
+  height: 35px;
+}
