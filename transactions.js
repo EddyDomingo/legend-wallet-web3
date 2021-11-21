@@ -1,16 +1,5 @@
 
 
-// get balance from an account
-// define account 
-// const account1 = "ACCOUNT-NUMBER"
-// //get balance
-// web3.eth.getBalance(ACCOUNT, (err, balance) => {console.log(balance)})
-
-// create account
-// console.log(web3.eth.accounts.create())
-//create environmental variables.
-// export VARIABLE_TO_SAVE_NAME='data'
-//console.log(process.env.PRIVATE_KEY_2)
 
 //--------------------- Send Transaction and Sign Transaction -------//
 var Tx = require('ethereumjs-tx').Transaction
@@ -56,8 +45,7 @@ web3.eth.getTransactionCount(account1, (err, txCount) => {
         console.log('txHash:', txHash)
         console.log(err)
     })
-    // web3.eth.sendSignedTransaction('0x' + serializedTransaction .toString('hex'))
-    // .on('receipt', console.log);
+    
 })
 
 
