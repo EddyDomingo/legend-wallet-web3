@@ -11,6 +11,15 @@
 
 <body>
     <main class="flex-container">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="WalletAddress">0xa01468628D1b08078E0619876007A1D7A23A49e7</p>
+                <img src="images/copy.png"  id="copy-img" class="copy-logo" alt="copy-icon">
+            </div>
+        </div>
 
         <section id="fund-section" style="flex-grow: 2;">
             <div class='main-card'>
@@ -27,20 +36,20 @@
             <div class="ethereum-container">
                 <div class="ethereum-card">
                     <img src="images/ethereum.png" class="eth-logo" alt="eth-logo">
-                    <p class="ethereum-card-text">
-                        202.15 ETH
+                    <p id="wallet-1" class="ethereum-card-text">
+                        <!-- 202.15 ETH -->
                     </p>
                 </div>
                 <div class="ethereum-card">
-                    <p class="ethereum-card-text">
-                        <img src="images/chainlink.png" class="link-logo" alt="eth-logo">
-                        103.56 LINK
+                    <img src="images/chainlink.png" class="link-logo" alt="eth-logo">
+                    <p id="wallet-link"  class="ethereum-card-text">
+                            <!-- 103.56 LINK -->
                     </p>
                 </div>
                 <div class="ethereum-card">
-                    <p class="ethereum-card-text">
-                        <img src="images/ethereum.png" class="eth-logo" alt="eth-logo">
-                        0.87658 ETH
+                    <img src="images/ethereum.png" class="eth-logo" alt="eth-logo">
+                    <p id="wallet-2"  class="ethereum-card-text">
+                        <!-- 0.87658 ETH -->
                     </p>
                 </div>
             </div>
@@ -55,7 +64,7 @@
             <input id="get-price" type="text" placeholder="ETH/USD">
             <div class="transact">
                <a href="#" class="btn">Send</a>
-               <a href="#" class="btn">Receive</a>
+               <a href="#" id="ReceiveBtn" class="btn">Receive</a>
             </div>
             <table>
                 <tr>
